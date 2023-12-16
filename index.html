@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyCode | Início</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/global.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo" href="index.html">
+                    <img src="assets/img/logo.png" alt="Logo MyCode">
+                </a>
+
+                <input class="search__input search__input--desktop" type="search" placeholder="Pesquise aqui...">
+
+                <nav class="header__navbar">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <button class="navbar__btn-search" aria-label="Abrir barra de pesquisa">
+                                <img src="assets/img/icons/search.svg" alt="">
+                            </button>
+                        </li>
+
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#!">
+                                <img src="assets/img/icons/heart.svg" alt="Favoritos">
+                                <span>Favoritos</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="#!">
+                                <img src="assets/img/icons/chat.svg" alt="Conversas">
+                                <span>Conversas</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar__item">
+                            <button class="navbar__btn-menu" aria-label="Abrir menu lateral">
+                                <img src="assets/img/icons/lateral-menu.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <aside class="search">
+                    <div class="search__container">
+                        <input class="search__input" type="search" placeholder="Pesquise aqui...">
+                        <button class="search__close" aria-label="Fechar barra de pesquisa">
+                            <img src="assets/img/icons/close-search.svg" alt="">
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main__recommended">
+                <div class="recommended__container">
+                    <ul class="recommended__list">
+                        <li class="recommended__item">
+                            <button class="recommended__btn-filter btn-filter--active" aria-label="Postagens gerais">Para você</button>
+                        </li>
+
+                        <li class="recommended__item">
+                            <button class="recommended__btn-filter" aria-label="Postagens front-end">Front-end</button>
+                        </li>
+
+                        <li class="recommended__item">
+                            <button class="recommended__btn-filter" aria-label="Postagens back-end">Back-end</button>
+                        </li>
+
+                        <li class="recommended__item">
+                            <button class="recommended__btn-filter" aria-label="Postagens full-stack">Full-stack</button>
+                        </li>
+                    </ul>
+
+                    <ul class="recommended__posts">
+                        <li class="recommended__post post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/1.jpg" alt="Dicas para começar na carreira">
+                                <h4 class="post__title">Dicas para começar na carreira</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="recommended__post post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/2.jpg" alt="HTML, CSS para iniciantes">
+                                <h4 class="post__title">HTML, CSS para iniciantes</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/2.svg" alt="Matheus Nunes">
+                                <span class="profile__name">Matheus Nunes</span>
+                            </a>
+                        </li>
+
+                        <li class="recommended__post post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/3.jpg" alt="JavaScript para iniciantes">
+                                <h4 class="post__title">JavaScript para iniciantes</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/2.svg" alt="Matheus Nunes">
+                                <span class="profile__name">Matheus Nunes</span>
+                            </a>
+                        </li>
+
+                        <li class="recommended__post post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/4.jpg" alt="Introdução ao Node.js">
+                                <h4 class="post__title">Introdução ao Node.js</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="view-more">Ver mais</button>
+                </div>
+            </section>
+
+            <section class="main__posts">
+                <div class="posts__container">
+                    <h2 class="posts__title">Populares</h2>
+                
+                    <ul class="posts__list">
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/5.jpg" alt="Front-End avançado com React">
+                                <h4 class="post__title">Front-End avançado com React</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/9.jpg" alt="C#: do Básico ao Avançado">
+                                <h4 class="post__title">C#: do Básico ao Avançado</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/3.svg" alt="José Antonio Gallo Junior">
+                                <span class="profile__name">José Antonio Gallo Junior</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/6.jpg" alt="Css: Padrão BEM">
+                                <h4 class="post__title">Css: Padrão BEM</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/2.svg" alt="Matheus Nunes">
+                                <span class="profile__name">Matheus Nunes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/8.jpg" alt="Introdução ao Node.js">
+                                <h4 class="post__title">Introdução ao Node.js</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/7.jpg" alt="JavaScript: Introdução ao DOM">
+                                <h4 class="post__title">JavaScript: Introdução ao DOM</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/4.svg" alt="Tiago Fernandes">
+                                <span class="profile__name">Tiago Fernandes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/11.jpg" alt="Tornando seu site responsivo">
+                                <h4 class="post__title">Tornando seu site responsivo</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/6.svg" alt="Márcio Moraes">
+                                <span class="profile__name">Márcio Moraes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/12.jpg" alt="Utilizando o Framework Angular">
+                                <h4 class="post__title">Utilizando o Framework Angular</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/10.jpg" alt="Começando a programar em Java">
+                                <h4 class="post__title">Começando a programar em Java</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/5.svg" alt="Kaick Borges">
+                                <span class="profile__name">Kaick Borges</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="view-more">Ver mais</button>
+                </div>
+            </section>
+
+            <section class="main__people">
+                <div class="people__container">
+                    <h2 class="people__title">Programadores</h2>
+
+                    <ul class="people__list">
+                        <li class="people__item">
+                            <a href="#!">
+                                <img class="people__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                            </a>
+
+                            <h3 class="people__name">Gabriel Oliveira</h3>
+
+                            <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                        </li>
+
+                        <li class="people__item">
+                            <a href="#!">
+                                <img class="people__photo" src="assets/img/profiles/7.svg" alt="Rafaela Torelli">
+                            </a>
+
+                            <h3 class="people__name">Rafaela Torelli</h3>
+
+                            <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                        </li>
+
+                        <li class="people__item">
+                            <a href="#!">
+                                <img class="people__photo" src="assets/img/profiles/8.svg" alt="Pedro Florêncio">
+                            </a>
+
+                            <h3 class="people__name">Pedro Florêncio</h3>
+
+                            <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="main__posts">
+                <div class="posts__container">
+                    <h2 class="posts__title">Recentes</h2>
+                
+                    <ul class="posts__list">
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/21.jpg" alt="Programação orientada a objetos em JavaScript">
+                                <h4 class="post__title">Programação orientada a objetos em JavaScript</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/4.svg" alt="Tiago Fernandes">
+                                <span class="profile__name">Tiago Fernandes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/22.jpg" alt="Introdução a linguagem Python">
+                                <h4 class="post__title">Introdução a linguagem Python</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/5.svg" alt="Kaick Borges">
+                                <span class="profile__name">Kaick Borges</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/13.jpg" alt="Front-end x Back-end">
+                                <h4 class="post__title">Front-end x Back-end</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/2.svg" alt="Matheus Nunes">
+                                <span class="profile__name">Matheus Nunes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/14.jpg" alt="Primeiro código em Ruby">
+                                <h4 class="post__title">Primeiro código em Ruby</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/16.jpg" alt="Diferenças entre var, let e const">
+                                <h4 class="post__title">Diferenças entre var, let e const</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/2.svg" alt="Matheus Nunes">
+                                <span class="profile__name">Matheus Nunes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/19.jpg" alt="Utilizando o Framework Django">
+                                <h4 class="post__title">Utilizando o Framework Django</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/6.svg" alt="Márcio Moraes">
+                                <span class="profile__name">Márcio Moraes</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/17.jpg" alt="Fazendo mágica com PHP">
+                                <h4 class="post__title">Fazendo mágica com PHP</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                <span class="profile__name">Gabriel Oliveira</span>
+                            </a>
+                        </li>
+
+                        <li class="posts__item post">
+                            <button class="like" aria-label="Curtir post">
+                                <img class="like__icon" src="assets/img/icons/heart-posts.svg" alt="Curtir post">
+                            </button>
+
+                            <a href="#!">
+                                <img class="post__image" src="assets/img/posts/18.jpg" alt="Um pouco sobre o Framework Vue">
+                                <h4 class="post__title">Um pouco sobre o Framework Vue</h4>
+                            </a>
+
+                            <a class="profile" href="#!">
+                                <img class="profile__photo" src="assets/img/profiles/5.svg" alt="Kaick Borges">
+                                <span class="profile__name">Kaick Borges</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="view-more">Ver mais</button>
+                </div>
+            </section>
+        </main>
+
+        <div class="overlay"></div>
+        <aside class="lateral-menu">
+            <div class="lateral-menu__container">
+                <nav class="lateral-menu__nav-menu"> <!--navigation menu between pages-->
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/house-door-fill.svg" alt="Navegar para página inicial">
+                                <span>Início</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/code-slash.svg" alt="Navegar para página de postagens">
+                                <span>Publicações</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/plus-circle.svg" alt="Navegar para página de criação de postagem">
+                                <span>Criar</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/profiles/profile.svg" alt="Navegar para página de perfil">
+                                <span>Perfil</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <hr class="lateral-menu__line">
+
+                <section class="lateral-menu__people">
+                    <div class="people__container">
+                        <h2 class="people__title">Programadores</h2>
+    
+                        <ul class="people__list">
+                            <li class="people__item">
+                                <a href="#!">
+                                    <img class="people__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                </a>
+    
+                                <h3 class="people__name">Gabriel Oliveira</h3>
+    
+                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                            </li>
+    
+                            <li class="people__item">
+                                <a href="#!">
+                                    <img class="people__photo" src="assets/img/profiles/7.svg" alt="Rafaela Torelli">
+                                </a>
+    
+                                <h3 class="people__name">Rafaela Torelli</h3>
+    
+                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                            </li>
+    
+                            <li class="people__item">
+                                <a href="#!">
+                                    <img class="people__photo" src="assets/img/profiles/8.svg" alt="Pedro Florêncio">
+                                </a>
+    
+                                <h3 class="people__name">Pedro Florêncio</h3>
+    
+                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                            </li>
+                        </ul>
+
+                        <button class="view-more">Ver mais</button>
+                    </div>
+                </section>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <nav class="nav-menu"> <!--navigation menu between pages-->
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/house-door-fill.svg" alt="Navegar para página inicial">
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/code-slash.svg" alt="Navegar para página de postagens">
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/icons/plus-circle.svg" alt="Navegar para página de criação de postagem">
+                            </a>
+                        </li>
+
+                        <li class="nav-menu__item">
+                            <a class="nav-menu__link" href="#!">
+                                <img src="assets/img/profiles/profile.svg" alt="Navegar para página de perfil">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

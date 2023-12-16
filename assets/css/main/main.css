@@ -1,0 +1,23 @@
+.main{
+    width: 100%;
+}
+
+.main__recommended{
+    width: 100%;
+}
+
+.main__posts{
+    width: 100%;
+}
+
+.main__people{
+    background: var(--secondary-bg-color);
+
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .main__people{
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+.nav-menu{
+    width: min(100%, 32rem);
+    
+    margin-inline: auto;
+}
+
+.nav-menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (min-width: 1024px) {
+    .lateral-menu__nav-menu{
+        padding-inline: 1rem;
+    }
+
+    .nav-menu__list{
+        flex-direction: column;
+        align-items: start;
+        gap: 1.25rem;
+
+        width: fit-content;
+    }
+
+    .nav-menu__link{
+        color: var(--normal-txt-color);
+
+        display: flex;
+        align-items: center;
+        gap: .625rem;
+    }
+}

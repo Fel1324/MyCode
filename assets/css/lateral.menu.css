@@ -1,0 +1,44 @@
+.lateral-menu{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .lateral-menu{
+        display: block;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        transform: translateX(100%);
+
+        background: var(--secondary-bg-color);
+        border-bottom-left-radius: 2.5rem;
+
+        width: 24vw;
+        max-width: 16rem;
+        height: 100vh;
+
+        padding-top: 7rem;
+        padding-bottom: 2rem;
+
+        transition: transform .3s ease-in-out;
+        
+        overflow: auto;
+    }
+
+    .lateral-menu--open{
+        transform: translateX(0%);
+    }
+
+    .lateral-menu__line{
+        width: 100%;
+        height: .125rem;
+
+        display: block;
+
+        background: var(--special-txt-color);
+
+        margin-block: 2rem;
+    }
+}
