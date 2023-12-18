@@ -1,22 +1,17 @@
-.lateral-menu{
+.main__lateral-menu{
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
-    .lateral-menu{
+    .main__lateral-menu{
         display: block;
 
         position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 100;
-        transform: translateX(100%);
+        transform: translateX(0%);
 
         background: var(--secondary-bg-color);
-        border-bottom-left-radius: 2.5rem;
 
-        width: 24vw;
-        max-width: 16rem;
+        width: 14rem;
         height: 100vh;
 
         padding-top: 7rem;
@@ -27,18 +22,27 @@
         overflow: auto;
     }
 
-    .lateral-menu--open{
-        transform: translateX(0%);
+    .main__lateral-menu::-webkit-scrollbar,
+    .main__lateral-menu::-webkit-scrollbar-thumb{
+        background-color: transparent;
+    }
+
+    .main__lateral-menu:hover::-webkit-scrollbar{
+        background-color: var(--scrollbar-bg-color);
+    }
+
+    .main__lateral-menu:hover::-webkit-scrollbar-thumb{
+        background-color: var(--scrollbar-color);
     }
 
     .lateral-menu__line{
-        width: 100%;
+        width: 92%;
         height: .125rem;
 
         display: block;
 
         background: var(--special-txt-color);
 
-        margin-block: 2rem;
+        margin: 2rem auto;
     }
 }

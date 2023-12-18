@@ -40,12 +40,6 @@
                                 <span>Conversas</span>
                             </a>
                         </li>
-
-                        <li class="navbar__item">
-                            <button class="navbar__btn-menu" aria-label="Abrir menu lateral">
-                                <img src="assets/img/icons/lateral-menu.svg" alt="">
-                            </button>
-                        </li>
                     </ul>
                 </nav>
 
@@ -61,7 +55,7 @@
         </header>
 
         <main class="main">
-            <section class="main__recommended">
+            <section id="recommended" class="main__recommended">
                 <div class="recommended__container">
                     <ul class="recommended__list">
                         <li class="recommended__item">
@@ -151,7 +145,7 @@
                 </div>
             </section>
 
-            <section class="main__posts">
+            <section id="postsA" class="main__posts">
                 <div class="posts__container">
                     <h2 class="posts__title">Populares</h2>
                 
@@ -327,7 +321,7 @@
                 </div>
             </section>
 
-            <section class="main__posts">
+            <section id="postsB" class="main__posts">
                 <div class="posts__container">
                     <h2 class="posts__title">Recentes</h2>
                 
@@ -464,86 +458,85 @@
                     <button class="view-more">Ver mais</button>
                 </div>
             </section>
-        </main>
 
-        <div class="overlay"></div>
-        <aside class="lateral-menu">
-            <div class="lateral-menu__container">
-                <nav class="lateral-menu__nav-menu"> <!--navigation menu between pages-->
-                    <ul class="nav-menu__list">
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#!">
-                                <img src="assets/img/icons/house-door-fill.svg" alt="Navegar para página inicial">
-                                <span>Início</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#!">
-                                <img src="assets/img/icons/code-slash.svg" alt="Navegar para página de postagens">
-                                <span>Publicações</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#!">
-                                <img src="assets/img/icons/plus-circle.svg" alt="Navegar para página de criação de postagem">
-                                <span>Criar</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-menu__item">
-                            <a class="nav-menu__link" href="#!">
-                                <img src="assets/img/profiles/profile.svg" alt="Navegar para página de perfil">
-                                <span>Perfil</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <hr class="lateral-menu__line">
-
-                <section class="lateral-menu__people">
-                    <div class="people__container">
-                        <h2 class="people__title">Programadores</h2>
-    
-                        <ul class="people__list">
-                            <li class="people__item">
-                                <a href="#!">
-                                    <img class="people__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+            <aside id="menu" class="main__lateral-menu">
+                <div class="lateral-menu__container">
+                    <nav class="lateral-menu__nav-menu"> <!--navigation menu between pages-->
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#!">
+                                    <img src="assets/img/icons/house-door-fill.svg" alt="Navegar para página inicial">
+                                    <span>Início</span>
                                 </a>
-    
-                                <h3 class="people__name">Gabriel Oliveira</h3>
-    
-                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
                             </li>
     
-                            <li class="people__item">
-                                <a href="#!">
-                                    <img class="people__photo" src="assets/img/profiles/7.svg" alt="Rafaela Torelli">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#!">
+                                    <img src="assets/img/icons/code-slash.svg" alt="Navegar para página de postagens">
+                                    <span>Publicações</span>
                                 </a>
-    
-                                <h3 class="people__name">Rafaela Torelli</h3>
-    
-                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
                             </li>
     
-                            <li class="people__item">
-                                <a href="#!">
-                                    <img class="people__photo" src="assets/img/profiles/8.svg" alt="Pedro Florêncio">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#!">
+                                    <img src="assets/img/icons/plus-circle.svg" alt="Navegar para página de criação de postagem">
+                                    <span>Criar</span>
                                 </a>
+                            </li>
     
-                                <h3 class="people__name">Pedro Florêncio</h3>
-    
-                                <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#!">
+                                    <img src="assets/img/profiles/profile.svg" alt="Navegar para página de perfil">
+                                    <span>Perfil</span>
+                                </a>
                             </li>
                         </ul>
-
-                        <button class="view-more">Ver mais</button>
-                    </div>
-                </section>
-            </div>
-        </aside>
+                    </nav>
+    
+                    <hr class="lateral-menu__line">
+    
+                    <section class="lateral-menu__people">
+                        <div class="people__container">
+                            <h2 class="people__title">Programadores</h2>
+        
+                            <ul class="people__list">
+                                <li class="people__item">
+                                    <a href="#!">
+                                        <img class="people__photo" src="assets/img/profiles/1.svg" alt="Gabriel Oliveira">
+                                    </a>
+        
+                                    <h3 class="people__name">Gabriel Oliveira</h3>
+        
+                                    <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                                </li>
+        
+                                <li class="people__item">
+                                    <a href="#!">
+                                        <img class="people__photo" src="assets/img/profiles/7.svg" alt="Rafaela Torelli">
+                                    </a>
+        
+                                    <h3 class="people__name">Rafaela Torelli</h3>
+        
+                                    <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                                </li>
+        
+                                <li class="people__item">
+                                    <a href="#!">
+                                        <img class="people__photo" src="assets/img/profiles/8.svg" alt="Pedro Florêncio">
+                                    </a>
+        
+                                    <h3 class="people__name">Pedro Florêncio</h3>
+        
+                                    <button class="people__btn-follow" aria-label="Seguir pessoa">Seguir</button>
+                                </li>
+                            </ul>
+    
+                            <button class="view-more">Ver mais</button>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+        </main>
 
         <footer class="footer">
             <div class="footer__container">

@@ -26,36 +26,27 @@ btnsFilter.forEach(btn => {
 
 /* HEADER AND FOOTER EFFECT SCROLL */
 let isScrolling;
+let bodyWidth = document.body.scrollWidth;
 const header = document.querySelector('.header');
 const footer = document.querySelector('.footer');
 
-window.addEventListener('scroll', () => {
-    const currentScrollTop = window.scrollY;
+if(bodyWidth < 1024){
+    window.addEventListener('scroll', () => {
+        const currentScrollTop = window.scrollY;
 
-    if (currentScrollTop > 0) {
-        header.style.opacity = '0.1';
-        footer.style.opacity = '0.1';
-    } else {
-        header.style.opacity = '1';
-        footer.style.opacity = '1';
-    }
+        if (currentScrollTop > 0) {
+            header.style.opacity = '0.1';
+            footer.style.opacity = '0.1';
+        } else {
+            header.style.opacity = '1';
+            footer.style.opacity = '1';
+        }
 
-    clearTimeout(isScrolling);
+        clearTimeout(isScrolling);
 
-    isScrolling = setTimeout(() => {
-        header.style.opacity = '1';
-        footer.style.opacity = '1';
-    }, 500);
-});
-
-/* LATERAL MENU */
-const btnLateralMenu = document.querySelector('.navbar__btn-menu');
-const lateralMenu = document.querySelector('.lateral-menu');
-const overlay = document.querySelector('.overlay');
-
-btnLateralMenu.addEventListener('click', () => {
-    lateralMenu.classList.toggle('lateral-menu--open');
-    overlay.classList.toggle('overlay--open');
-    document.body.classList.toggle('body-scroll');
-    btnLateralMenu.classList.toggle('navbar__btn-menu--open');
-});
+        isScrolling = setTimeout(() => {
+            header.style.opacity = '1';
+            footer.style.opacity = '1';
+        }, 500);
+    });
+}

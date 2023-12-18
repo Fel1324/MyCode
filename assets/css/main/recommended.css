@@ -65,9 +65,3 @@
         flex-wrap: wrap;
     }
 }
-
-@media screen and (min-width: 1440px) {
-    .recommended__container{
-        padding-inline: 4rem;
-    }
-}

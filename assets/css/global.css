@@ -46,10 +46,6 @@ html, body{
     font-weight: 400;
 }
 
-.body-scroll{
-    overflow: hidden;
-}
-
 h1, h2, h3, h4, h5, h6{
     font-weight: 400;
 }
@@ -70,25 +66,6 @@ p{
 
 a{
     text-decoration: none;
-}
-
-/* OVERLAY LATERAL MENU */
-.overlay{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-
-    width: 100vw;
-    height: 100vh;
-
-    background: var(--overlay-bg-color);
-
-    display: none;
-}
-
-.overlay--open{
-    display: block;
 }
 
 /* HEART */

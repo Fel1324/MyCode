@@ -17,6 +17,31 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .main{
+        display: grid;
+        grid-template-columns: 14rem 1fr;
+        grid-template-areas: 
+        'menuL recommended'
+        'menuL postsA'
+        'menuL postsB';
+    }
+
+    #recommended{
+        grid-area: recommended;
+    }
+
+    #postsA{
+        grid-area: postsA;
+    }
+
+    #postsB{
+        grid-area: postsB;
+    }
+
+    #menu{
+        grid-area: menuL;
+    }
+
     .main__people{
         display: none;
     }
