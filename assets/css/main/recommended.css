@@ -1,8 +1,8 @@
 .recommended__container{
     width: 100%;
 
-    padding: 2rem 1.25rem;
     margin-top: 4.875rem;
+    padding: 2rem 1.25rem;
 }
 
 .recommended__list{
@@ -55,6 +55,10 @@
     .recommended__container{
         padding-inline: 2.1rem;
         padding-block: 3rem;
+
+        max-width: 110rem;
+
+        margin-inline: auto;
     }
 
     .recommended__list{

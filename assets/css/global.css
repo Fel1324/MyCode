@@ -18,18 +18,15 @@
 :root{
     --primary-bg-color: #0A2647;
     --secondary-bg-color: #144272;
-    --header-footer-bg-color: #2C74B3;
     --search-input-bg-color: #2C74B3;
-    --logo-bg-color: #205295;
     --linear-gradient-bg-color: linear-gradient(to bottom, #3B97E8, #205295 80%);
-    --overlay-bg-color: #0000006C;
 
     --scrollbar-color: #00B4D8;
     --scrollbar-bg-color: #DDD;
 
     --normal-txt-color: #FFFFFF;
     --special-txt-color: #3B97E8;
-    --active-color: #3B97E8;
+    --nav-menu-item-color: rgba(0, 136, 255, 0.466);
     
     --font: 'Inter', sans-serif;
 }
@@ -78,12 +75,12 @@ a{
 }
 
 .like__icon{
-    width: 1rem;
-    transition: width .3s ease;
+    width: 1.25rem;
+    transition: transform .3s ease;
 }
 
 .like:hover .like__icon{
-    width: 1.2rem;
+    transform: scale(1.1);
 }
 
 /* POST */

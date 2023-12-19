@@ -118,6 +118,13 @@
         display: block;
 
         background: var(--secondary-bg-color);
+        border: .125rem solid transparent;
+    }
+
+    .search__input--desktop:focus{
+        border: .125rem solid var(--special-txt-color);
+        
+        outline: none;
     }
 }
 
@@ -143,7 +150,7 @@
         color: var(--normal-txt-color);
     }
 
-    .search__input{
+    .search__input--desktop{
         max-width: 26rem;
 
         padding-block: .55rem;
