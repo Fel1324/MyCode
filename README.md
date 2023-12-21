@@ -5,7 +5,8 @@
 </p>
 
 
-<h3 align="justify">Projeto final da disciplina Interfaces Web II - Professor: Márcio Jesus de Moraes, 2º ano do Ensino Médio com Habilitação Profissional de Técnico em Informática para Internet - 4º Bimestre.<h3>
+<h3 align="justify">Projeto final da disciplina Interfaces Web II - Professor: Márcio Jesus de Moraes, 2º ano do Ensino Médio com Habilitação Profissional de Técnico em Informática para Internet - ETEC Comendador João Rays - 4º Bimestre.
+<h3>
 
 <br>
 
