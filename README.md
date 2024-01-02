@@ -48,6 +48,8 @@ Clique [aqui](https://fel1324.github.io/MyCode/) para acessar o projeto
 * Git e Github
 * Figma
 
+<br>
+
 <h2 id="status">🚧 Status dos projetos</h2>
 
 ✔️ Projeto Finalizado
